@@ -32,7 +32,12 @@ body {
 }
 /*video*/
 
-
+.getstarted{
+  position: relative;
+}
+hr.new4 {
+  border: 1px solid rgb(255, 255, 255);
+}
 /*steps*/
 .collapsible {
   background-color: rgb(41, 40, 40);
