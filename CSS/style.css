@@ -96,10 +96,10 @@ hr.new4 {
 
   text-align: center;
 }
-
-
-
-
+/*carousel*/
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
 /*intro videos*/
 
 .swiper {
