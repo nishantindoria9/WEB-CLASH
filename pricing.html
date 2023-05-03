@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+
     <title>Document</title>
 </head>
 <body>
 
 
 <style>
-    body {
-    -webkit-font-smoothing: antialiased;
-    background-color:black;
+/*navbar*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #3C486B;
+  height: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
-        
-        section {
-            color: #7a90ff;
-            padding: 2em 0 8em;
-            min-height: 100vh;
-            position: relative;
-            -webkit-font-smoothing: antialiased;
-        }
-        
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #5991d1;
+  color: white;
+}
+
+
         .pricing {
             display: -webkit-flex;
             display: flex;
@@ -86,7 +107,7 @@
         
         .pricing-palden .pricing-deco {
             border-radius: 10px 10px 0 0;
-            background: linear-gradient(135deg,#4097f9,#0af0c7);
+            background: linear-gradient(135deg,#3C486B,#FED8A7);
             padding: 4em 0 9em;
             position: relative;
         }
@@ -169,30 +190,34 @@
             padding: 1em 2em;
             color: #fff;
             border-radius: 30px;
-            background: linear-gradient(135deg,#a93bfe,#584efd);
+            background: linear-gradient(135deg,#FED8A7,#3C486B);
             -webkit-transition: background-color 0.3s;
             transition: background-color 0.3s;
         }
         
-        .pricing-palden .pricing-action:hover,
-        .pricing-palden .pricing-action:focus {
-            background: linear-gradient(135deg,#fd7d57,#f55d59);
-        }
-        
+     
         .pricing-palden .pricing-item--featured .pricing-deco {
             padding: 5em 0 8.885em 0;
         }
-</style>
 
+    </style>
+    </head>
 
-<div class="topnav container-fluid">
-    <a class="active" href="#">VEB CLASH</a>
-    <a href="take2.html">Home</a>
+    <body>
 
-  </div>
+        <div class="topnav" >
+            <a href="CSS/text_logo-removebg-preview (1).png">
+          <a class="active" href="#">VEB CLASH</a>
+          <a href="#">Home</a>
+          <a href="contactx.html">Contact Us</a>
+          <a href="aboutx.html">About Us</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
 
     <section>
       
+        <br><br><br>
+
       
         <div class="pricing pricing-palden">
             <div class="pricing-item features-item ja-animate" data-animation="move-from-bottom" data-delay="item-0" style="min-height: 497px;">
@@ -219,7 +244,7 @@
                 <a href="Contact.html"><button  class="pricing-action">Choose plan</button></a>
             </div>
             <div class="pricing-item features-item ja-animate pricing__item--featured" data-animation="move-from-bottom" data-delay="item-1" style="min-height: 497px;">
-                <div class="pricing-deco" style="background: linear-gradient(135deg,#a93bfe,#584efd)">
+                <div class="pricing-deco" style="background: linear-gradient(135deg,#3C486B,#FED8A7)">
                     <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" y="0px">
                         <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
                         <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
