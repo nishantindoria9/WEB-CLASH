@@ -39,6 +39,8 @@ body {
   color: white;
 }
 
+
+
 /*video*/
 
 
@@ -85,7 +87,8 @@ body {
 
 .active,
 .collapsible:hover {
-  color: #7989d1;
+  /*color: #7989d1;*/
+  color: #FED8A7;
 }
 
 .content {
@@ -463,7 +466,12 @@ section .section-title {
   background-color: rgb(206, 206, 206);
   width: 100%;
 }
-
+.container .texo1 {
+  text-align: center;
+  margin: 20px 20px 20px 10px;
+  
+}
+/*
 .container h1 {
   text-align: center;
   margin-top: 100px;
