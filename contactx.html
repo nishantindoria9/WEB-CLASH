@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <title>Document</title>
+	<script src="https://kit.fontawesome.com/41de0e087b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Document</title>
 </head>
 <body>
 
@@ -87,6 +90,205 @@
 	.contact-form button:focus{
 		box-shadow:none;
 	}
+
+	
+/*footer*/
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), black), url("http://andreeabunget.co.uk/Img/footer.jpg");
+  background-size: cover;
+
+}
+
+
+
+.first {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: rgb(206, 206, 206);
+  font-family: 'Poppins', sans-serif;
+}
+
+.first h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #fff;
+  padding-bottom: 0.5em;
+}
+
+.first h4:hover {
+  color: red;
+}
+
+.first h4::after {
+  content: '';
+  background: #303b9d;
+  width: 20%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.first p {
+  font-size: 14px;
+}
+
+.second {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: rgb(206, 206, 206);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.second2 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: rgb(206, 206, 206);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.second h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #fff;
+  padding-bottom: 0.5em;
+}
+
+.second h4::after {
+  background: #172778;
+  width: 20%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+
+
+.second li {
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+.second a,
+.second2 a {
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.second a:hover,
+.second2 a:hover {
+  color: red;
+  transition: 0.2s;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 1);
+  text-decoration: none
+}
+
+
+
+.third {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: rgb(206, 206, 206);
+  font-family: 'Poppins', sans-serif;
+  text-align: right;
+}
+
+
+.third h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #fff;
+  padding-bottom: 0.5em;
+}
+
+.third h4:hover {
+  color: red;
+}
+
+.third h4::after {
+  content: '';
+  background: #122785;
+  width: 20%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+}
+
+
+
+.third li {
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+
+.third a {
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+
+.third a:hover {
+  color: #fff;
+  transition: 0.2s;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 1);
+}
+
+
+@media screen and (max-width:1000px) {
+  .first {
+    text-align: center;
+  }
+
+  .first h4::after {
+    left: 40%;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .third {
+    text-align: center;
+  }
+
+  .third h4::after {
+    left: 40% !important;
+  }
+}
+
+.margin {
+  margin-left: 20px;
+}
+
+.line {
+  height: 2px;
+  background-color: rgb(206, 206, 206);
+  width: 100%;
+}
+.container .texo1 {
+  text-align: center;
+  margin: 20px 20px 20px 10px;
+  
+}
 </style>
     </head>
 
@@ -147,6 +349,77 @@
 </div>
 
 
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="first">
+                        <h4>Contact-Information</h4>
+                        <div class="content" style="padding: 15px 0px;">
+                            <a href="#"><i class="fa-sharp fa-solid fa-phone-volume"></i></a>
+                        </div>
+                        <h5>MON TO SUN : 24/7</h5>
+                        <h4>IND+91 9343342755</h4>
+
+                        <div class="contact" style="padding: 15px 0px"><a href=" #"><i class="fa-solid fa-inbox"></i>
+                                <h4>webclash9@gmail.com</h4>
+                            </a></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="second">
+                        <h4> Our Company</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="aboutx.html">About Us</a></li>
+                            <li><a href="#">Affilate Program</a></li>
+                            <li><a href="contactx.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="third">
+                        <h4> Our Office </h4>
+                        <ul>
+                            <li>
+                                <div class="map"><iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.5366368085247!2d76.84910185005029!3d23.07744338485136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397ce9d90a8052ed%3A0xf16d30274bfb79f3!2sVIT%20BHOPAL%20New%20Academic%20Block!5e0!3m2!1sen!2sin!4v1673964118401!5m2!1sen!2sin"
+                                        width="250" height="250" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="line"></div>
+                    <div class="second2">
+                       
+                       
+                       
+                
+
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-2x margin"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-whatsapp fa-2x margin"></i></a>
+                        <a href="#" target="_blank"><i class="fa-solid fa-envelope fa-2x margin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube fa-2x margin"></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
