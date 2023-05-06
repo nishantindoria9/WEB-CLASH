@@ -1,10 +1,4 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  /* background: linear-gradient(rgba(125, 193, 225, 0.7), rgb(2, 34, 41)), url("http://andreeabunget.co.uk/Img/footer.jpg");
-    */
-  background-size: cover;
-}
+
 
 /*navbar*/
 
@@ -78,7 +72,7 @@ body {
   border: none;
   text-align: left;
   font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
+
   border-radius: 2px;
   position: relative;
   margin-top: 10px;
@@ -106,7 +100,7 @@ body {
 
 .texo1 {
   color: #ffffff;
-  font-family: 'Times New Roman', Times, serif;
+  
   font-size: 25px;
 }
 
@@ -116,7 +110,7 @@ body {
 }
 
 .heading-faq {
-  font-family: 'Times New Roman', Times, serif;
+
   font-weight: bolder;
   text-align: center;
   color: #000000;
@@ -262,7 +256,7 @@ section .section-title {
 .backside .card a,
 .frontside .card a {
   font-size: 18px;
-  font-family: 'Times New Roman', Times, serif;
+
 }
 
 
@@ -287,7 +281,7 @@ section .section-title {
   margin-top: 40px;
   margin-bottom: 50px;
   color: rgb(206, 206, 206);
-  font-family: 'Poppins', sans-serif;
+
 }
 
 .first h4 {
@@ -322,7 +316,7 @@ section .section-title {
   margin-top: 40px;
   margin-bottom: 50px;
   color: rgb(206, 206, 206);
-  font-family: 'Poppins', sans-serif;
+  
   text-align: center;
 }
 
@@ -330,7 +324,7 @@ section .section-title {
   margin-top: 40px;
   margin-bottom: 50px;
   color: rgb(206, 206, 206);
-  font-family: 'Poppins', sans-serif;
+
   text-align: center;
 }
 
@@ -383,7 +377,7 @@ section .section-title {
   margin-top: 40px;
   margin-bottom: 50px;
   color: rgb(206, 206, 206);
-  font-family: 'Poppins', sans-serif;
+
   text-align: right;
 }
 
