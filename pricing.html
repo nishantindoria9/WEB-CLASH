@@ -14,9 +14,7 @@
 
     <title>Document</title>
 </head>
-<body>
-
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <style>
   body{
     background-image: url(CSS/back-icon.jpg);
@@ -24,8 +22,11 @@
   }
 /*navbar*/
 
+/*navbar*/
+
 .topnav {
-  background-color: #3C486B;
+  overflow: hidden;
+  background: linear-gradient( black, rgba(0, 0, 0, 0.7));
   height: auto;
   position: fixed;
   top: 0;
@@ -39,177 +40,176 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 25px 25px;
+  text-align: justify;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  color: #FED8A7;
+  text-decoration: none;
 }
 
 .topnav a.active {
-  background-color: #5991d1;
-  color: white;
+font-size: 30px;
+text-decoration: none;
 }
 
+.pricing {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 3em;
+}
+        
+.pricing-item {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    text-align: center;
+    -webkit-flex: 0 1 330px;
+    flex: 0 1 330px;
+}
 
-        .pricing {
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-wrap: wrap;
-            flex-wrap: wrap;
-            -webkit-justify-content: center;
-            justify-content: center;
-            width: 100%;
-            margin: 0 auto 3em;
-        }
-        
-        .pricing-item {
-            position: relative;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-direction: column;
-            flex-direction: column;
-            -webkit-align-items: stretch;
-            align-items: stretch;
-            text-align: center;
-            -webkit-flex: 0 1 330px;
-            flex: 0 1 330px;
-        }
-        
-        .pricing-action {
-            color: inherit;
-            border: none;
-            background: none;
-            cursor: pointer;
-        }
-        
-        .pricing-action:focus {
-            outline: none;
-        }
-        
-        .pricing-feature-list {
-            text-align: left;
-        }
-        
-        .pricing-palden .pricing-item {
-            
-            cursor: default;
-            color: #84697c;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(46, 59, 125, 0.23);
-            border-radius: 20px 20px 10px 10px;
-            margin: 1em;
-        }
-        
-        @media screen and (min-width: 66.25em) {
-            .pricing-palden .pricing-item {
-                margin: 1em -0.5em;
-            }
-            .pricing-palden .pricing__item--featured {
-                margin: 0;
-                z-index: 10;
-                box-shadow: 0 0 20px rgba(46, 59, 125, 0.23);
-            }
-        }
-        
-        .pricing-palden .pricing-deco {
-            border-radius: 10px 10px 0 0;
-            background: linear-gradient(135deg,#3C486B,#FED8A7);
-            padding: 4em 0 9em;
-            position: relative;
-        }
-        
-        .pricing-palden .pricing-deco-img {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 160px;
-        }
-        
-        .pricing-palden .pricing-title {
-            font-size: 0.75em;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            color: #fff;
-        }
-        
-        .pricing-palden .deco-layer {
-            -webkit-transition: -webkit-transform 0.5s;
-            transition: transform 0.5s;
-        }
-        
-        .pricing-palden .pricing-item:hover .deco-layer--1 {
-            -webkit-transform: translate3d(15px, 0, 0);
-            transform: translate3d(15px, 0, 0);
-        }
-        
-        .pricing-palden .pricing-item:hover .deco-layer--2 {
-            -webkit-transform: translate3d(-15px, 0, 0);
-            transform: translate3d(-15px, 0, 0);
-        }
-        
-        .pricing-palden .icon {
-            font-size: 2.5em;
-        }
-        
-        .pricing-palden .pricing-price {
-            font-size: 5em;
-            font-weight: bold;
-            padding: 0;
-            color: #fff;
-            margin: 0 0 0.25em 0;
-            line-height: 0.75;
-        }
-        
-        .pricing-palden .pricing-currency {
-            font-size: 0.15em;
-            vertical-align: top;
-        }
-        
-        .pricing-palden .pricing-period {
-            font-size: 0.15em;
-            padding: 0 0 0 0.5em;
-            font-style: italic;
-        }
-        
-        .pricing-palden .pricing__sentence {
-            font-weight: bold;
-            margin: 0 0 1em 0;
-            padding: 0 0 0.5em;
-        }
-        
-        .pricing-palden .pricing-feature-list {
-            margin: 0;
-            padding: 0.25em 0 2.5em;
-            list-style: none;
-            text-align: center;
-        }
-        
-        .pricing-palden .pricing-feature {
-            padding: 1em 0;
-        }
-        
-        .pricing-palden .pricing-action {
-            font-weight: bold;
-            margin: auto 3em 2em 3em;
-            padding: 1em 2em;
-            color: #fff;
-            border-radius: 30px;
-            background: linear-gradient(135deg,#b8dbda,#59c5d8);
-            -webkit-transition: background-color 0.3s;
-            transition: background-color 0.3s;
-            
-        }
-        
-     
-        .pricing-palden .pricing-item--featured .pricing-deco {
-            padding: 5em 0 8.885em 0;
-        }
+.pricing-action {
+    color: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.pricing-action:focus {
+    outline: none;
+}
+
+.pricing-feature-list {
+    text-align: left;
+}
+
+.pricing-palden .pricing-item {
+    
+    cursor: default;
+    color: #84697c;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(46, 59, 125, 0.23);
+    border-radius: 20px 20px 10px 10px;
+    margin: 1em;
+}
+
+@media screen and (min-width: 66.25em) {
+    .pricing-palden .pricing-item {
+        margin: 1em -0.5em;
+    }
+    .pricing-palden .pricing__item--featured {
+        margin: 0;
+        z-index: 10;
+        box-shadow: 0 0 20px rgba(46, 59, 125, 0.23);
+    }
+}
+
+.pricing-palden .pricing-deco {
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(135deg,#3C486B,#FED8A7);
+    padding: 4em 0 9em;
+    position: relative;
+}
+
+.pricing-palden .pricing-deco-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+}
+
+.pricing-palden .pricing-title {
+    font-size: 0.75em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.pricing-palden .deco-layer {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.pricing-palden .pricing-item:hover .deco-layer--1 {
+    -webkit-transform: translate3d(15px, 0, 0);
+    transform: translate3d(15px, 0, 0);
+}
+
+.pricing-palden .pricing-item:hover .deco-layer--2 {
+    -webkit-transform: translate3d(-15px, 0, 0);
+    transform: translate3d(-15px, 0, 0);
+}
+
+.pricing-palden .icon {
+    font-size: 2.5em;
+}
+
+.pricing-palden .pricing-price {
+    font-size: 5em;
+    font-weight: bold;
+    padding: 0;
+    color: #fff;
+    margin: 0 0 0.25em 0;
+    line-height: 0.75;
+}
+
+.pricing-palden .pricing-currency {
+    font-size: 0.15em;
+    vertical-align: top;
+}
+
+.pricing-palden .pricing-period {
+    font-size: 0.15em;
+    padding: 0 0 0 0.5em;
+    font-style: italic;
+}
+
+.pricing-palden .pricing__sentence {
+    font-weight: bold;
+    margin: 0 0 1em 0;
+    padding: 0 0 0.5em;
+}
+
+.pricing-palden .pricing-feature-list {
+    margin: 0;
+    padding: 0.25em 0 2.5em;
+    list-style: none;
+    text-align: center;
+}
+
+.pricing-palden .pricing-feature {
+    padding: 1em 0;
+}
+
+.pricing-palden .pricing-action {
+    font-weight: bold;
+    margin: auto 3em 2em 3em;
+    padding: 1em 2em;
+    color: #fff;
+    border-radius: 30px;
+    background: linear-gradient(135deg,#b8dbda,#59c5d8);
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    
+}
+
+.pricing-palden .pricing-item--featured .pricing-deco {
+    padding: 5em 0 8.885em 0;
+}
 
 /*footer*/
 .footer {
@@ -414,7 +414,8 @@
     <body>
 
   
-      <div class="topnav " >
+ 
+      <div class="topnav" >
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><i style="color: white;" class="fa-solid fa-bars"></i>
               <span class="icon-bar"></span>
@@ -422,14 +423,14 @@
               <span class="icon-bar"></span>                        
             </button>
             <a href="CSS/text_logo-removebg-preview (1).png">
-                <a class="active" href="#">VEB CLASH</a>
+                <a class="active" href="#">WEB <span style="color: red; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">CLASH</span></a>
           </div>
     
         <div class="collapse navbar-collapse" id="myNavbar">
-        <a href="take2.html">Home</a>
-        <a href="contactx.html">Contact Us</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="aboutx.html">About Us</a>
+        <a href="#">Home</a>
+        <a href="contactx.html" target="_blank">Contact Us</a>
+        <a href="pricing.html" target="_blank">Pricing</a>
+        <a href="aboutx.html" target="_blank">About Us </a>
         </div>
       </div>
 
