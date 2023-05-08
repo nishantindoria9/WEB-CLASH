@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="https://kit.fontawesome.com/41de0e087b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/svg-with-js.min.css"
+        integrity="sha512-W3ZfgmZ5g1rCPFiCbOb+tn7g7sQWOQCB1AkDqrBG1Yp3iDjY9KYFh/k1AWxrt85LX5BRazEAuv+5DV2YZwghag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/41de0e087b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="take2.css">
+  
 
-	<title>Document</title>
+    <title>Document</title>
 </head>
+
 <body>
 
-<!------ Include the above in your HEAD tag ---------->
+    <style>
+        body {
+            background: #ffffff;
+            font-family: 'Times New Roman', Times, serif;
 
+        }
 
+        /*navbar*/
 
-
-<style>
 /*navbar*/
 
 .topnav {
   overflow: hidden;
-  background-color: #3C486B;
+  background: linear-gradient( black, rgba(0, 0, 0, 0.7));
   height: auto;
   position: fixed;
   top: 0;
@@ -41,21 +47,21 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 25px 25px;
+  text-align: justify;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  color: #FED8A7;
+  text-decoration: none;
 }
 
 .topnav a.active {
-  background-color: #5991d1;
-  color: white;
+font-size: 30px;
+text-decoration: none;
 }
-
 	.contact{
 		padding: 4%;
 		height: 400px;
@@ -90,36 +96,31 @@
 </style>
     </head>
 
-    <body>
-
-      <div class="topnav" >
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><i style="color: white;" class="fa-solid fa-bars"></i>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-            <a href="CSS/text_logo-removebg-preview (1).png">
-                <a class="active" href="#">VEB CLASH</a>
-          </div>
-    
-        <div class="collapse navbar-collapse" id="myNavbar">
-        <a href="take2.html">Home</a>
-        <a href="contactx.html">Contact Us</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="aboutx.html">About Us</a>
-        </div>
-<<<<<<< HEAD
-<div>
-=======
-      </div>
+    <body style="background-image: url(CSS/back-icon.jpg);">
 
 
 
+		<div class="topnav" >
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><i style="color: white;" class="fa-solid fa-bars"></i>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>                        
+				</button>
+				<a href="CSS/text_logo-removebg-preview (1).png">
+					<a class="active" href="#">WEB <span style="color: red; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">CLASH</span></a>
+			  </div>
+		
+			<div class="collapse navbar-collapse" id="myNavbar">
+			<a href="take2.html" target="_blank">Home</a>
+			<a href="#" >Contact Us</a>
+			<a href="pricing.html" target="_blank">Pricing</a>
+			<a href="aboutx.html" >about Us </a>
+			</div>
+		  </div>
 
-
->>>>>>> 3c45edc14243073876a7e4284f2f0cb7407a2e42
-<div class="container-fluid contact">
+<div style=" padding-top: 5%;">
+<div class="container-fluid contact" >
 	<div class="row">
 		<div class="col-md-3">
 			<div class="contact-info">
@@ -130,117 +131,40 @@
 		</div>
 		<div class="col-md-9">
 			<div class="contact-form">
-				<div class="form-group">
+				<div class="form-group" style="margin-top: 50px;">
 				  <label class="control-label col-sm-2" for="fname">First Name:</label>
 				  <div class="col-sm-10">          
 					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
 				  </div>
 				</div>
-				<div class="form-group">
+				<div class="form-group" style="padding-top: 50px;">
 				  <label class="control-label col-sm-2" for="lname">Last Name:</label>
 				  <div class="col-sm-10">          
 					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
 				  </div>
 				</div>
-				<div class="form-group">
+				<div class="form-group" style="padding-top: 50px;">
 				  <label class="control-label col-sm-2" for="email">Email:</label>
 				  <div class="col-sm-10">
 					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
 				  </div>
 				</div>
-				<div class="form-group">
-				  <label class="control-label col-sm-2" for="comment">Comment:</label>
+				<div class="form-group" style="padding-top: 50px;">
+				  <label class="control-label col-sm-2" for="comment">Any specific details:</label>
 				  <div class="col-sm-10">
 					<textarea class="form-control" rows="5" id="comment"></textarea>
 				  </div>
 				</div>
-				<div class="form-group">        
-				  <div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default">Submit</button>
+				<div class="form-group" style="padding-top: 50px;">        
+				  <div class="col-sm-offset-2 col-sm-10" style="padding-top: 90px;">
+					<button type="submit" class="btn btn-default" >Submit</button>
 				  </div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-</div>
-<br>
-<hr><hr>
-<br>
-<hr><hr><br>
-<hr><hr><br>
-<hr><hr>
-    <!-- footer 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <div class="first">
-                        <h4>Contact-Information</h4>
-                        <div class="content" style="padding: 15px 0px;">
-                            <a href="#"><i class="fa-sharp fa-solid fa-phone-volume"></i></a>
-                        </div>
-                        <h5>MON TO SUN : 24/7</h5>
-                        <h4>IND+91 9343342755</h4>
 
-                        <div class="contact" style="padding: 15px 0px"><a href=" #"><i class="fa-solid fa-inbox"></i>
-                                <h4>webclash9@gmail.com</h4>
-                            </a></div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="second">
-                        <h4> Our Company</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="aboutx.html">About Us</a></li>
-                            <li><a href="#">Affilate Program</a></li>
-                            <li><a href="contactx.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="third">
-                        <h4> Our Office </h4>
-                        <ul>
-                            <li>
-                                <div class="map"><iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.5366368085247!2d76.84910185005029!3d23.07744338485136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397ce9d90a8052ed%3A0xf16d30274bfb79f3!2sVIT%20BHOPAL%20New%20Academic%20Block!5e0!3m2!1sen!2sin!4v1673964118401!5m2!1sen!2sin"
-                                        width="250" height="250" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-                    </div>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="line"></div>
-                    <div class="second2">
-                       
-                       
-                       
-                
-
-                        <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-2x margin"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-whatsapp fa-2x margin"></i></a>
-                        <a href="#" target="_blank"><i class="fa-solid fa-envelope fa-2x margin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube fa-2x margin"></i></a>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
--->
 
 
 </body>
