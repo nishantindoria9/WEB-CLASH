@@ -130,7 +130,7 @@ text-decoration: none;
 			</div>
 		</div>
 		<div class="col-md-9">
-			<form onsubmit="sendEmail(); reset(); return false">
+			<form action="https://formsubmit.co/nishantindoria9@gmail.com" method="POST">
 			<div class="contact-form">
 				<div class="form-group" style="margin-top: 50px;">
 				  <label class="control-label col-sm-2" for="fname">First Name:</label>
@@ -168,25 +168,7 @@ text-decoration: none;
 
 
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-	function sendEmail(){
-		Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "nishant6059@gmail.com",
-    Password : "776C00F2ECE7943FC4263C7BC96FFBC4B725",
-    To : 'ambitiousotaku07@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "new contact form enquiry",
-    Body : "Name: "+ document.getElementById("fname").value
-	+ "<br> Lname: " + document.getElementById("lname").value
-	+ "<br> Email: " + document.getElementById("email").value
-	+"<br> message: " + document.getElementById("comment").value
-}).then(
-  message => alert(message)
-);
-	}
 
-</script>
+
 </body>
 </html>
