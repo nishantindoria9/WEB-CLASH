@@ -130,29 +130,30 @@ text-decoration: none;
 			</div>
 		</div>
 		<div class="col-md-9">
+			<form onsubmit="sendEmail(); reset(); return false">
 			<div class="contact-form">
 				<div class="form-group" style="margin-top: 50px;">
 				  <label class="control-label col-sm-2" for="fname">First Name:</label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
 				  </div>
 				</div>
 				<div class="form-group" style="padding-top: 50px;">
 				  <label class="control-label col-sm-2" for="lname">Last Name:</label>
 				  <div class="col-sm-10">          
-					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
 				  </div>
 				</div>
 				<div class="form-group" style="padding-top: 50px;">
 				  <label class="control-label col-sm-2" for="email">Email:</label>
 				  <div class="col-sm-10">
-					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
 				  </div>
 				</div>
 				<div class="form-group" style="padding-top: 50px;">
 				  <label class="control-label col-sm-2" for="comment">Any specific details:</label>
 				  <div class="col-sm-10">
-					<textarea class="form-control" rows="5" id="comment"></textarea>
+					<textarea class="form-control" rows="5" id="comment" required></textarea>
 				  </div>
 				</div>
 				<div class="form-group" style="padding-top: 50px;">        
@@ -161,11 +162,31 @@ text-decoration: none;
 				  </div>
 				</div>
 			</div>
+		</form>
 		</div>
 	</div>
 
 
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+	function sendEmail(){
+		Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "nishant6059@gmail.com",
+    Password : "776C00F2ECE7943FC4263C7BC96FFBC4B725",
+    To : 'ambitiousotaku07@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "new contact form enquiry",
+    Body : "Name: "+ document.getElementById("fname").value
+	+ "<br> Lname: " + document.getElementById("lname").value
+	+ "<br> Email: " + document.getElementById("email").value
+	+"<br> message: " + document.getElementById("comment").value
+}).then(
+  message => alert(message)
+);
+	}
 
+</script>
 </body>
 </html>
