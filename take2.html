@@ -15,9 +15,20 @@
     <script src="https://kit.fontawesome.com/41de0e087b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="CSS/favicon.ico">
 
 <body>
+    <style>
+        #preloder{
+            background-color: #000 url(webimg/Web\ clash.gif.mp4) no-repete center center;
+            background-size: 30%;
+            height: 100hv;
+            width: 100%;
+            position: fixed;
+            z-index: 100%;
+        }
+    </style>
+    
 
 
     <style>
@@ -30,6 +41,13 @@
 }
     </style>
     
+
+
+    <div id=""preloader></div>
+
+
+
+
   
 <div class="topnav" >
     <div class="navbar-header">
@@ -473,6 +491,13 @@
                 }
             });
         }
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display = "none"
+    
+        });
     </script>
 
 </body>
